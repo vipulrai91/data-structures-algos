@@ -5,7 +5,6 @@
 
 
 # Sample input
-from operator import indexOf
 
 
 array = [3, 5, -4, 8, 11, 1, -1, 6]
@@ -23,7 +22,7 @@ class TwoSum:
         for index, val in enumerate(self.array):
             diff = self.targetSum - val
             if diff in prevMap.keys():
-                return [diff,val]
+                return [diff, val]
             prevMap.update({val: index})
         return []
 
