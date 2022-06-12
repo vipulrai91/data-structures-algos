@@ -29,11 +29,11 @@ class ValidateSubsequence:
         arrIdx = 0
         seqIdx = 0
 
-        while arrIdx < len(self.array) and seqIdx < len(self.sequence):
-            if self.array[arrIdx] == self.sequence[seqIdx]:
+        while arrIdx < len(array) and seqIdx < len(sequence):
+            if array[arrIdx] == sequence[seqIdx]:
                 seqIdx += 1
             arrIdx += 1
-        return seqIdx == len(self.sequence)
+        return seqIdx == len(sequence)
 
 
 vsq = ValidateSubsequence(array=array, sequence=sequence)
