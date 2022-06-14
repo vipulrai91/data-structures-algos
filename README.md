@@ -1,2 +1,1 @@
-# algo-expert
-Python soution for algoexpert
+# Data Structures and Algo
