@@ -46,7 +46,7 @@ print(has_path_recursion_dfs(graph, source_node, destination_node))
 
 
 def has_path_recursion_bfs(graph, src, dest):
-    # BFS Solution
+    # BFS Solution , recursion not possible
     # base case
     queue = [src]
 
