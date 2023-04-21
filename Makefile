@@ -1,3 +1,3 @@
 lint :
-	 black .
-	 isort .
+	isort .
+	black .
