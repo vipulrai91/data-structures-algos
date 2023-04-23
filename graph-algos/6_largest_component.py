@@ -33,4 +33,3 @@ def largest_Components(graph):
 
 
 print(largest_Components(largest_component))
-
