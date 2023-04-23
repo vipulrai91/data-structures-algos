@@ -1,3 +1,6 @@
+# https://leetcode.com/problems/two-sum/
+# All test cases success
+
 from typing import List
 
 
