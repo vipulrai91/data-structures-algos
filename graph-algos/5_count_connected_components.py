@@ -10,7 +10,6 @@ def connectedCompontentsCount(graph):
     for node in graph:
         if explore(graph, node, visited) == True:
             count += 1
-
     return count
 
 
