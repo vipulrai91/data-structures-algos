@@ -4,20 +4,40 @@
 
 from typing import List
 
+# Hash Map
+# class Solution:
+#     def containsDuplicate(self, nums: List[int]) -> bool:
 
+#         counter = {}
+
+#         for index, value in enumerate(nums):
+#             # print(index, value)
+#             if value in counter:
+#                 return True
+#             else:
+#                 counter.update({value: 1})
+
+#         return False
+
+
+# Hash Set Solution
 class Solution:
     def containsDuplicate(self, nums: List[int]) -> bool:
 
-        counter = {}
+        counter = set()
 
-        for index, value in enumerate(nums):
-            # print(index, value)
-            if value in counter:
+        for n in nums:
+            if n in counter:
                 return True
-            else:
-                counter.update({value: 1})
+            counter.add(n)
 
         return False
+
+
+
+# class Solution:
+#     def containsDuplicate(self, nums: List[int]) -> bool:
+#         return len(nums) != len(set(nums))
 
 
 # nums = [1, 2, 3, 1]
